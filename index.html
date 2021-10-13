@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC COMPANY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <script src="https://kit.fontawesome.com/a16ee49fde.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="wrapper">
+        <div class="logo">
+            <div class="circle">
+                <div class="content">
+                    <h1>COMPANY</h1>
+                </div>
+            </div>
+        </div>
+        <ul class="nav_area">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CORPORATE ENQUIRY</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="main_nav">
+    <div class="wrapper">
+        <article class="main_Navbar">
+            <a>35 <sup>th</sup>ANNIVERSARY</a>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    PRODUCTS <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown_content" id="myDropdown">
+                    <a href="#">Air Conditioners</a>
+                    <a href="#">Beds</a>
+                    <a href="#">Bedroom Suits</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    LIVING ROOM <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    BED ROOM <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    DINING <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    OFFICE FURNITURE <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    PLASTIC PRODUCTS <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropBtn" onclick="newBar()">
+                    APPLIANCES <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <a>STORE LOCATOR</a>
+            <script>
+                function newBar() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropBtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+        </article>
+    </div>
+</div>
+
+<div class="container">
+    <div class="wrapper">
+<!--        <input type="radio" name="images" id="i1" checked>-->
+<!--        <input type="radio" name="images" id="i2">-->
+<!--        <input type="radio" name="images" id="i3">-->
+
+<!--        <div class="slide_img" id="one">-->
+<!--            <img src="assets/img/pexels-kelly-lacy-2869215.jpg" alt="">-->
+<!--        </div>-->
+
+<!--        <div class="slide_img" id="two">-->
+<!--            <img src="assets/img/pexels-rachel-claire-4577673.jpg" alt="">-->
+<!--        </div>-->
+
+<!--        <div class="slide_img" id="three">-->
+<!--            <img src="assets/img/pexels-rachel-claire-4825701.jpg" alt="">-->
+<!--        </div>-->
+
+<!--        <div class="nav">-->
+<!--            <label class="dots" id="dot1" for="i1" ></label>-->
+<!--            <label class="dots" id="dot2" for="i2" ></label>-->
+<!--            <label class="dots" id="dot3" for="i3" ></label>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<!--<header class="main_header">-->
+<!--    <div class="wrapper">-->
+<!--        <div class="logo">-->
+<!--            <div class="circle">-->
+<!--                <div class="content">-->
+<!--                    <h1>COMPANY</h1>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <ul class="nav_area">-->
+<!--            <li><a href="#">ABOUT US</a></li>-->
+<!--            <li><a href="#">GALLERY</a></li>-->
+<!--            <li><a href="#">CORPORATE ENQUIRY</a></li>-->
+<!--            <li><a href="#">CONTACT US</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</header>-->
+
+
+
+<!--<section class="main_view">-->
+<!--    <div class="wrapper">-->
+
+<!--    </div>-->
+<!--</section>-->
+
+<footer class="main_footer">
+
+</footer>
+</body>
+
+</html>
