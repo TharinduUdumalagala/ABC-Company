@@ -1,20 +1,21 @@
-*{
-    box-sizing: border-box;
+* {
+    box-sizing: border-box
 }
 
-body{
+body {
+    font-family: Verdana, sans-serif;
     margin: 0;
 }
 
-header{
+header {
     height: 5%;
     top: 0;
     position: relative;
 }
 
-header > aside{
-    background: #000;
-    color: #fff;
+header > aside {
+    background: black;
+    color: azure;
     width: 200px;
     height: 60px;
     border-radius: 50%;
@@ -22,29 +23,29 @@ header > aside{
     left: 10%;
 }
 
-header > aside >h1{
+header > aside > h1 {
     font-size: 1.5em;
     margin: 0px;
     padding-top: 15px;
     text-align: center;
 }
 
-.top_nav {
+.topnav {
     position: relative;
     left: 45%;
     width: max-content;
 }
 
-.top_nav > ul {
+.topnav > ul {
     font-size: 1em;
     list-style: none;
 }
 
-.top_nav > ul > li {
+.topnav > ul > li {
     display: inline-block;
 }
 
-.top_nav > ul > li > a {
+.topnav > ul > li > a {
     float: left;
     font-size: 16px;
     color: black;
@@ -53,7 +54,7 @@ header > aside >h1{
     text-decoration: none;
 }
 
-.top_nav > ul > li > a:hover {
+.topnav > ul > li > a:hover {
     background-color: #ddd;
 }
 
@@ -65,7 +66,7 @@ main {
 .mainNavbar {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #2b2457;
+    background-color:  #2b2457;
 }
 
 .mainNavbar a {
@@ -77,7 +78,7 @@ main {
     text-decoration: none;
 }
 
-.anniversary {
+.annivesary {
     margin-left: 8%;
 }
 
@@ -86,7 +87,7 @@ main {
     overflow: hidden;
 }
 
-.dropdown .drop_btn {
+.dropdown .dropbtn {
     font-size: 14px;
     border: none;
     outline: none;
@@ -96,8 +97,7 @@ main {
     margin: 0;
 }
 
-.mainNavbar a:hover,
-.dropdown:hover .drop_btn {
+.mainNavbar a:hover, .dropdown:hover .dropbtn {
     color: red;
 }
 
@@ -120,7 +120,6 @@ main {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 .column {
     float: left;
@@ -150,14 +149,18 @@ main {
     clear: both;
 }
 
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
 
-/*@media screen and (max-width: 600px) {*/
-/*    .column {*/
-/*        width: 100%;*/
-/*        height: auto;*/
-/*    }*/
-/*}*/
 
+.btn{
+    width: 100px;
+    height: 25px;
+}
 
 .mySlides {
     display: none
@@ -210,7 +213,6 @@ main {
     text-align: center;
 }
 
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -259,13 +261,11 @@ main {
     }
 }
 
-/*@media only screen and (max-width: 300px) {*/
-/*    .prev, .next, .text {*/
-/*        font-size: 11px*/
-/*    }*/
-/*}*/
-
-
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
 
 .aboutUs{
     margin: 3.84%;
@@ -291,7 +291,7 @@ main {
     margin-top: 6%;
 }
 
-.aboutUs.column{
+.aboutUs .column{
     width: 50%;
     background-color: white;
 }
@@ -341,6 +341,30 @@ main {
     border:0;
 }
 
+.beds{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.beds .column{
+    background-color: white;
+    width: 33.33%;
+}
+
+.beds img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.beds div label {
+
+}
+
 
 footer {
     position: fixed;
@@ -348,12 +372,12 @@ footer {
     bottom: 0;
     width: 100%;
     height: 12%;
-    background-color: #2b2457;
+    background-color:  #2b2457;
     color: white;
 }
 
 
-#customerCare > img {
+#customer > img {
     width: 25px;
     height: 25px;
     border: 1px solid white;
@@ -362,7 +386,7 @@ footer {
     top: 38px;
 }
 
-#customerCare > p {
+#customer > p {
     left: 214px;
     position: fixed;
 }
@@ -380,9 +404,4 @@ footer {
     left: 650px;
     position: fixed;
     display: inline-block;
-}
-
-.btn{
-    width: 100px;
-    height: 25px;
 }
